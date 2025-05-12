@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 def uppercase(str):
+    result = ""
     for char in str:
         if ord('a') <= ord(char) <= ord('z'):
             # Convert lowercase to uppercase by subtracting 32 from its ASCII value
-            print(chr(ord(char) - 32), end="")
+            result += chr(ord(char) - 32)
         else:
-            print(char, end="")
-    print()  # Print a new line after the loop
+            result += char
+    print(result)  # Print the result in one print statement
