@@ -8,5 +8,4 @@ def uppercase(str):
             result += chr(ord(char) - 32)
         else:
             result += char
-    # Split the print statement into two lines to avoid exceeding 79 characters
     print("{}".format(result))  # Using string formatting with .format() to print the result
