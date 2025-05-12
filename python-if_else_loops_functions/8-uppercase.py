@@ -8,4 +8,4 @@ def uppercase(str):
             result += chr(ord(char) - 32)
         else:
             result += char
-    print(result)  # Print the result in one print statement
+    print(result, end="\n")  # This ensures the string is printed followed by a newline
