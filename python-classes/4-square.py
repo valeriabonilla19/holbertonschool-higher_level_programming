@@ -3,17 +3,12 @@
 Defines a class Square with size validation, area computation, and getter/setter.
 """
 
-
 class Square:
     """Represents a square."""
 
     def __init__(self, size=0):
-        """Initialize a new square.
-
-        Args:
-            size (int): Size of the square (default is 0).
-        """
-        self.size = size  # Uses the setter for validation
+        """Initialize a new square with optional size."""
+        self.size = size
 
     @property
     def size(self):
@@ -22,14 +17,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """Set the size of the square with validation.
-
-        Args:
-            value (int): New size value
-        Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is less than 0.
-        """
+        """Set the size of the square with validation."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
