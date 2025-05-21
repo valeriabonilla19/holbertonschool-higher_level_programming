@@ -12,7 +12,8 @@ def best_score(a_dictionary):
         a_dictionary (dict): A dictionary with integer values.
 
     Returns:
-        str: Key with the highest value, or None if dictionary is empty or None.
+        str: Key with the highest value, or None if dictionary is empty
+             or None.
     """
     if not a_dictionary:
         return None
