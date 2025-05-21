@@ -1,9 +1,28 @@
 #!/usr/bin/python3
-best_score = __import__('10-best_score').best_score
+"""
+Module that defines a function to find the key with the biggest integer value.
+"""
 
-a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
-best_key = best_score(a_dictionary)
-print("Best score: {}".format(best_key))
 
-best_key = best_score(None)
-print("Best score: {}".format(best_key))
+def best_score(a_dictionary):
+    """
+    Returns the key with the highest integer value in the dictionary.
+
+    Args:
+        a_dictionary (dict): A dictionary with integer values.
+
+    Returns:
+        str: Key with the highest value, or None if dictionary is empty or None.
+    """
+    if not a_dictionary:
+        return None
+
+    max_key = None
+    max_value = float('-inf')
+
+    for key, value in a_dictionary.items():
+        if value > max_value:
+            max_value = value
+            max_key = key
+
+    return max_key
