@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""Module for shape abstraction and duck typing example.
+"""
+
 from abc import ABC, abstractmethod
 import math
 
