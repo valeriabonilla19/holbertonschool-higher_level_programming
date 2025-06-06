@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Module 5-save_to_json_file
-Contains a function that writes an object to a text file using JSON representation.
+Contains a function that writes an object to a text file
+using JSON representation.
 """
 
 import json
